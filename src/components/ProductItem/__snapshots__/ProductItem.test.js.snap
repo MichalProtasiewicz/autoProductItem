@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa bTOSoM"
+>
+  <div>
+    <div
+      className="sc-htpNat gdzvUh"
+    >
+      189,00 zł
+    </div>
+     
+    <div
+      className="sc-bxivhb gJmRWy"
+    >
+      -15%
+    </div>
+  </div>
+  <div
+    className="sc-bwzfXH dXvMWJ"
+  >
+    149,00 zł
+  </div>
+  <div
+    className="sc-ifAKCX fPluha"
+  >
+    Havoline Magnetic
+  </div>
+  <div
+    className="sc-EHOje eQbvHn"
+  >
+    EVO 15W-40
+  </div>
+  <div
+    className="sc-bZQynM gCCpeL"
+  >
+    Olej przekładniowy
+  </div>
+  <div
+    className="sc-gzVnrw juDLgv"
+  >
+    5l
+  </div>
+  <a
+    className="sc-htoDjs bMUTT"
+    href=""
+  >
+    Więcej
+  </a>
+  <a
+    className="sc-dnqmqq iOAxRo"
+    href=""
+  >
+    Dodaj do koszyka
+  </a>
+  <a
+    className="sc-iwsKbI cIXOjI"
+    href=""
+  >
+    Obserwuj produkt
+  </a>
+</div>
+`;

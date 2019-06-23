@@ -1,38 +1,120 @@
 import React, { useState, useEffect } from 'react';
-import {More, AddToCart, Follow, Product, Price, Discount, OldPrice, Value, Description, Name, Subname} from './ProductItem.style';
 
+import {
+  MoreButton,
+  AddToCart,
+  Follow,
+  Product,
+  Price,
+  Discount,
+  OldPrice,
+  Value,
+  Description,
+  Name,
+  Subname,
+  Wrong,
+  Empty,
+  NotFollow,
+  NotAddToCart,
+  More,
+  Cross
+} from './ProductItem.style';
 
-function ProductItem(props) {
+function ProductItem({ data, handleClick }) {
+  const [isDiscount, setIsDiscount] = useState(false);
+  const [isMore, setIsMore] = useState(false);
+  const [isAddToCart, setIsAddToCart] = useState(false);
+  const [isFollow, setIsFollow] = useState(false);
 
-
-  const [values, setValues] = useState({isDiscount: false, oldPrice: "189,00 zł", discount: "-15%", price: "149,00 zł", name: "Havoline Magnetic", subname: "EVO 15W-40", description: "Olej przekładniowy", value: "5l"});
-  const[isDiscount, setIsDiscount] = useState(""); const[oldPrice, setOldPrice] = useState("123"); const[discount, setDiscount] = useState(""); const[price, setPrice] = useState("");
+  useEffect(() => {
+    setIsDiscount((data.discount && data.oldPrice) !== null ? true : false);
+  }, [data.discount, data.oldPrice]);
 
   return (
-      <Product>
-        { values.isDiscount
-        ? <><OldPrice>{values.oldPrice}</OldPrice> <Discount>{values.discount}</Discount></>
-        : <div style= {{padding:"1.2em"}}> </div>
-        }
-        <Price>{values.price}</Price>
-        <Name>{values.name}</Name>
-        <Subname>{values.subname}</Subname>
-        <Description>{values.description}</Description>
-        <Value>{values.value}</Value>
-        <More href="">Więcej</More>
-        <AddToCart href="">Dodaj do koszyka</AddToCart>
-        <Follow href="">Obserwuj produkt</Follow>
-
-        <form>
-          <Description>{oldPrice}</Description>
-          <input value={oldPrice} onChange={e => setOldPrice(e.target.value)} type="text" name="oldPrice" required />
-        </form>
-
-      </Product>
-
-
-//hgjfjhgfhgf
-    );
-  };
+    <>
+      {data && Object.keys(data).length > 0 ? (
+        <Product>
+          {isMore ? (
+            <>
+              <Cross
+                href="javascript:void(0)"
+                onClick={() => {
+                  setIsMore(false);
+                }}
+              >
+                X
+              </Cross>
+              <More>{data.more}</More>
+            </>
+          ) : (
+            <>
+              {isDiscount ? (
+                <>
+                  <OldPrice>{data.oldPrice}</OldPrice>{' '}
+                  <Discount>{data.discount}</Discount>
+                </>
+              ) : (
+                <Empty />
+              )}
+              <Price>{data.price}</Price>
+              <Name>{data.name}</Name>
+              <Subname>{data.subname}</Subname>
+              <Description>{data.description}</Description>
+              <Value>{data.value}</Value>
+              <MoreButton
+                href="javascript:void(0)"
+                onClick={() => {
+                  setIsMore(true);
+                }}
+              >
+                Więcej
+              </MoreButton>
+              {isAddToCart ? (
+                <NotAddToCart
+                  href="javascript:void(0)"
+                  onClick={() => {
+                    setIsAddToCart(false);
+                  }}
+                >
+                  Usuń z koszyka
+                </NotAddToCart>
+              ) : (
+                <AddToCart
+                  href="javascript:void(0)"
+                  onClick={() => {
+                    setIsAddToCart(true);
+                  }}
+                >
+                  Dodaj do koszyka
+                </AddToCart>
+              )}
+              {isFollow ? (
+                <NotFollow
+                  href="javascript:void(0)"
+                  onClick={() => {
+                    setIsFollow(false);
+                  }}
+                >
+                  Produkt Obserwowany
+                </NotFollow>
+              ) : (
+                <Follow
+                  href="javascript:void(0)"
+                  onClick={() => {
+                    setIsFollow(true);
+                  }}
+                >
+                  Obserwuj produkt
+                </Follow>
+              )}
+            </>
+          )}
+        </Product>
+      ) : (
+        <Wrong>WRONG PRODUCT!</Wrong>
+      )}
+    </>
+  );
+}
 
 export default ProductItem;

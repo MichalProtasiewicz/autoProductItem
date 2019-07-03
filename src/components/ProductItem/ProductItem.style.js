@@ -83,7 +83,7 @@ export const Description = styled.div`
 export const More = styled.div`
   margin-left: 20px;
   margin-top: 20px;
-  height: 285px;
+  height: 300px;
   width: 200px;
   padding: 0.1em;
   background: ${Colors.scorpion};

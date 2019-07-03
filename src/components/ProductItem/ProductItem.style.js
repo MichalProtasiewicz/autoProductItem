@@ -19,21 +19,41 @@ export const Product = styled.div`
   /* Other */
 `;
 
+<<<<<<< HEAD
 export const OldPrice = styled.div`
   margin-left: 0.9em
   margin-top: 0.3em;
   grid-column: 1;
   grid-row:1;
+=======
+export const Price = styled.div`
+  margin-left: 0.7em;
+  color: ${Colors.white};
+  font-weight: bold;
+  font-size: 1.7em;
+`;
+
+export const OldPrice = styled.div`
+  margin-left: 0.9em;
+  margin-top: 0.3em;
+  position: absolute;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   color: ${Colors.silverChalice};
   text-decoration: line-through;
   font-size: 1.35em;
 `;
 
 export const Discount = styled.div`
+<<<<<<< HEAD
   margin-left: 1.5em;
   margin-top: 0.3em;
   grid-column: 2;
   grid-row: 1;
+=======
+  margin-left: 7em;
+  margin-top: 0.4em;
+  position: static;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   height: 30px;
   width: 55px;
   padding-top: 1px;
@@ -47,20 +67,30 @@ export const Discount = styled.div`
   grid-row: 1;
 `;
 
+<<<<<<< HEAD
 export const Price = styled.div`
   margin-top: 0.2em;
   margin-left: 0.6em;
   grid-column: 1/3;
   grid-row: 2;
+=======
+export const Name = styled.div`
+  margin-left: 1.4em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   color: ${Colors.white};
   font-weight: bold;
   font-size: 1.7em;
 `;
 
+<<<<<<< HEAD
 export const Name = styled.div`
   margin-left: 1.2em;
   grid-column: 1/3;
   grid-row: 2;
+=======
+export const Subname = styled.div`
+  margin-left: 1.4em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   color: ${Colors.white};
   font-size: 1em;
   font-weight: bold;
@@ -71,15 +101,21 @@ export const Name = styled.div`
 `;
 
 export const Description = styled.div`
+<<<<<<< HEAD
   margin-left: 1.25em;
   grid-column: 1/3;
   grid-row: 4;
+=======
+  margin-left: 1em;
+  padding: 5px;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   color: ${Colors.silverChalice};
   font-size: 0.9em;
   line-height: 1.1;
   letter-spacing: 0.03em;
 `;
 
+<<<<<<< HEAD
 export const More = styled.div`
   margin-left: 20px;
   margin-top: 20px;
@@ -92,11 +128,16 @@ export const More = styled.div`
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.03em;
+=======
+export const Value = styled.div`
+  margin-left: 1.3em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   color: ${Colors.silverChalice};
   font-size: 1em;
   line-height: 1.43;
 `;
 
+<<<<<<< HEAD
 export const MoreButton = styled.a`
   margin-left: 0.5em;
   margin-top: 0.5em;
@@ -105,6 +146,32 @@ export const MoreButton = styled.a`
   padding-top: 0.35em;
   grid-column: 1/3;
   grid-row: 5;
+=======
+export const Wrong = styled.div`
+  color: ${Colors.red};
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+`;
+
+export const More = styled.div`
+  margin: 0.5em;
+  padding: 5px;
+  color: ${Colors.silverChalice};
+  font-size: 1em;
+  line-height: 1.43;
+`;
+
+export const Empty = styled.div`
+  padding: 1.39em;
+`;
+
+export const MoreButton = styled.a`
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  display: inline-block;
+  padding: 0.4em 5em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   border-radius: 0.12em;
   background: ${Colors.silverChalice};
   color: black;
@@ -120,11 +187,16 @@ export const MoreButton = styled.a`
 
 export const AddToCart = styled.a`
   margin: 0.5em;
+<<<<<<< HEAD
   height: 50px;
   width: 185px;
   padding-top: 1em;
   grid-column: 1/3;
   grid-row: 6;
+=======
+  display: inline-block;
+  padding: 1em 2.5em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   border-radius: 0.12em;
   background: ${Colors.apple};
   color: ${Colors.white};
@@ -139,11 +211,16 @@ export const AddToCart = styled.a`
 
 export const NotAddToCart = styled.a`
   margin: 0.5em;
+<<<<<<< HEAD
   height: 50px;
   width: 185px;
   padding-top: 1em;
   grid-column: 1/3;
   grid-row: 6;
+=======
+  display: inline-block;
+  padding: 1em 2.95em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   border-radius: 0.12em;
   background: ${Colors.darkApple};
   color: ${Colors.white};
@@ -158,11 +235,16 @@ export const NotAddToCart = styled.a`
 
 export const Follow = styled.a`
   margin-left: 0.5em;
+<<<<<<< HEAD
   height: 25px;
   width: 185px;
   padding-top: 0.4em;
   grid-column: 1/3;
   grid-row: 7;
+=======
+  display: inline-block;
+  padding: 0.4em 4.1em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   border: 0.1em solid ${Colors.silverChalice};
   border-radius: 0.12em;
   color: ${Colors.silverChalice};
@@ -179,11 +261,16 @@ export const Follow = styled.a`
 
 export const NotFollow = styled.a`
   margin-left: 0.5em;
+<<<<<<< HEAD
   height: 25px;
   width: 185px;
   padding-top: 0.4em;
   grid-column: 1/3;
   grid-row: 7;
+=======
+  display: inline-block;
+  padding: 0.4em 3em;
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a
   border: 0.1em solid ${Colors.white};
   border-radius: 0.12em;
   color: ${Colors.white};
@@ -211,6 +298,7 @@ export const Cross = styled.a`
     color: ${Colors.silverChalice};
   }
 `;
+<<<<<<< HEAD
 
 export const ProductList = styled.div`
   display: grid;
@@ -223,3 +311,5 @@ export const Empty = styled.div``;
 export const Subname = styled.div``;
 
 export const Value = styled.div``;
+=======
+>>>>>>> f93a3b00efffe4921fbfd8e2cc1eeabb29ed2b7a

@@ -31,7 +31,9 @@ const ProductList = {
       discount: '-15%',
       value: '5l',
       more:
-        'Najwyższej jakości, w pełni syntetyczny olej silnikowy do najnowszych samochodów benzynowych i Diesel. Olej dedykowany do najnowszych silników pojazdów grupy VW/Audi. Sprzedawca Petrostar. Oficjalna aprobata VW 504.00/507.00.'
+        'Najwyższej jakości, w pełni syntetyczny olej silnikowy do najnowszych samochodów benzynowych i Diesel. Olej dedykowany do najnowszych silników pojazdów grupy VW/Audi. Sprzedawca Petrostar. Oficjalna aprobata VW 504.00/507.00.',
+      isAddToCart:false,
+      isFollow:false
     },
     {
       name: 'Havoline Magnetic',
@@ -41,7 +43,9 @@ const ProductList = {
       discount: '15%',
       price: '15,00 zł',
       value: '5l',
-      more: 'Szczegółowy opis produktu'
+      more: 'Szczegółowy opis produktu',
+      isAddToCart:true,
+      isFollow:true
     },
     {
       name: 'Havoline Magnetic',
@@ -51,7 +55,9 @@ const ProductList = {
       discount: '-95%',
       price: '15,00 zł',
       value: '5l',
-      more: 'Szczegółowy opis produktu'
+      more: 'Szczegółowy opis produktu',
+      isAddToCart:true,
+      isFollow:false
     },
     {
       name: 'Magnetic',
@@ -61,7 +67,9 @@ const ProductList = {
       discount: '15%',
       price: '155,00 zł',
       value: '5l',
-      more: 'Szczegółowy opis produktu'
+      more: 'Szczegółowy opis produktu',
+      isAddToCart:false,
+      isFollow:true
     },
     {
       name: 'Havoline Magnetic Magnetic',
@@ -71,7 +79,9 @@ const ProductList = {
       discount: '15%',
       price: '15,00 zł',
       value: '5l',
-      more: 'Szczegółowy opis produktu'
+      more: 'Szczegółowy opis produktu',
+      isAddToCart:true,
+      isFollow:true
     },
     {
       name: 'Havoline Magnetic',
@@ -81,7 +91,9 @@ const ProductList = {
       discount: '15%',
       price: '15,00 zł',
       value: '5l',
-      more: 'Szczegółowy opis produktu'
+      more: 'Szczegółowy opis produktu',
+      isAddToCart:false,
+      isFollow:false
     },
     {
       name: 'Havoline Magnetic',
@@ -91,7 +103,9 @@ const ProductList = {
       discount: '15%',
       price: '15,00 zł',
       value: '5l',
-      more: 'Szczegółowy opis produktu'
+      more: 'Szczegółowy opis produktu',
+      isAddToCart:false,
+      isFollow:false
     }
   ]
 };
@@ -109,7 +123,9 @@ storiesOf('ProductItem', module)
         discount: '-15%',
         value: '5l',
         more:
-          'Najwyższej jakości, w pełni syntetyczny olej silnikowy do najnowszych samochodów benzynowych i Diesel. Olej dedykowany do najnowszych silników pojazdów grupy VW/Audi. Sprzedawca Petrostar. Oficjalna aprobata VW 504.00/507.00.'
+          'Najwyższej jakości, w pełni syntetyczny olej silnikowy do najnowszych samochodów benzynowych i Diesel. Olej dedykowany do najnowszych silników pojazdów grupy VW/Audi. Sprzedawca Petrostar. Oficjalna aprobata VW 504.00/507.00.',
+        isAddToCart:false,
+        isFollow:false
       }}
     />
   ))
@@ -123,7 +139,9 @@ storiesOf('ProductItem', module)
         discount: '15%',
         price: '15,00 zł',
         value: '5l',
-        more: 'Szczegółowy opis produktu'
+        more: 'Szczegółowy opis produktu',
+        isAddToCart:false,
+        isFollow:false
       }}
     />
   ))
@@ -136,7 +154,9 @@ storiesOf('ProductItem', module)
         discount: '-90%',
         price: '15,00 zł',
         value: '5l',
-        more: 'Szczegółowy opis produktu'
+        more: 'Szczegółowy opis produktu',
+        isAddToCart:false,
+        isFollow:false
       }}
     />
   ))

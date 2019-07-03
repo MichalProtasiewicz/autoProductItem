@@ -29,6 +29,10 @@ function ProductItem({ data }) {
   useEffect(() => {
     if (data)
       setIsDiscount(data.discount && data.oldPrice !== null ? true : false);
+    if(data)
+      setIsAddToCart(data.isAddToCart === true ? true : false);
+    if(data)
+      setIsFollow(data.isFollow === true ? true : false);
   }, [data]);
 
   return isMore ? (

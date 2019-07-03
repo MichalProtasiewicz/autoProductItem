@@ -12,6 +12,9 @@ export const GET_PRODUCT_ITEM_DETAILS = gql`
       oldPrice
       discount
       more
+
+      isAddToCart
+      isFollow
     }
   }
 `;
@@ -27,6 +30,9 @@ export const GET_PRODUCT_ITEMS_DETAILS = gql`
       oldPrice
       discount
       more
+
+      isAddToCart
+      isFollow
     }
   }
 `;

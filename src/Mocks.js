@@ -20,7 +20,10 @@ export const Mocks = [
           description: faker.lorem.words(),
           value: faker.random.number(),
           discount: faker.random.number(),
-          more: faker.lorem.sentence()
+          more: faker.lorem.sentence(),
+
+          isAddToCart:true,
+          isFollow:true
         }
       }
     }
@@ -42,7 +45,9 @@ export const Mocks = [
             discount: '-15%',
             value: '5l',
             more:
-              'Najwyższej jakości, w pełni syntetyczny olej silnikowy do najnowszych samochodów benzynowych i Diesel. Olej dedykowany do najnowszych silników pojazdów grupy VW/Audi. Sprzedawca Petrostar. Oficjalna aprobata VW 504.00/507.00.'
+              'Najwyższej jakości, w pełni syntetyczny olej silnikowy do najnowszych samochodów benzynowych i Diesel. Olej dedykowany do najnowszych silników pojazdów grupy VW/Audi. Sprzedawca Petrostar. Oficjalna aprobata VW 504.00/507.00.',
+            isAddToCart:false,
+            isFollow:false
           },
           {
             id: faker.random.number(),
@@ -53,7 +58,9 @@ export const Mocks = [
             description: faker.lorem.words(),
             value: faker.random.number(),
             discount: faker.random.number(),
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:true,
+            isFollow:true
           },
           {
             id: faker.random.number(),
@@ -64,7 +71,9 @@ export const Mocks = [
             description: faker.lorem.words(),
             value: faker.random.number(),
             discount: null,
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:false,
+            isFollow:true
           },
           {
             id: faker.random.number(),
@@ -75,7 +84,9 @@ export const Mocks = [
             description: faker.lorem.words(),
             value: faker.random.number(),
             discount: null,
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:true,
+            isFollow:false
           },
           {
             id: faker.random.number(),
@@ -86,7 +97,9 @@ export const Mocks = [
             description: faker.lorem.words(),
             value: faker.random.number(),
             discount: faker.random.number(),
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:true,
+            isFollow:true
           },
           {
             id: faker.random.number(),
@@ -97,7 +110,9 @@ export const Mocks = [
             description: faker.lorem.words(),
             value: faker.random.number(),
             discount: faker.random.number(),
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:false,
+            isFollow:false
           },
           {
             id: faker.random.number(),
@@ -108,7 +123,9 @@ export const Mocks = [
             description: null,
             value: faker.random.number(),
             discount: faker.random.number(),
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:false,
+            isFollow:false
           },
           {
             id: faker.random.number(),
@@ -119,7 +136,9 @@ export const Mocks = [
             description: faker.lorem.words(),
             value: null,
             discount: faker.random.number(),
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:false,
+            isFollow:false
           },
           {
             id: faker.random.number(),
@@ -130,7 +149,9 @@ export const Mocks = [
             description: faker.lorem.words(),
             value: faker.random.number(),
             discount: faker.random.number(),
-            more: faker.lorem.sentence()
+            more: faker.lorem.sentence(),
+            isAddToCart:false,
+            isFollow:false
           },
           {
             id: null,
@@ -141,7 +162,9 @@ export const Mocks = [
             description: null,
             value: null,
             discount: null,
-            more: null
+            more: null,
+            isAddToCart:false,
+            isFollow:false
           }
         ]
       }

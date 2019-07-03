@@ -20,7 +20,7 @@ export const Mocks = [
           description: faker.lorem.words(),
           value: faker.random.number(),
           discount: faker.random.number(),
-          more: faker.lorem.sentence(),
+          more: faker.lorem.sentence()
         }
       }
     }

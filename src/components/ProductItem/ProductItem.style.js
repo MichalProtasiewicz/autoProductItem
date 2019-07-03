@@ -6,12 +6,12 @@ export const Product = styled.div`
   margin-left: 20px;
   margin-top: 20px;
   /* Display & Box Model */
-  height: 285px;
+  height: 300px;
   width: 200px;
   padding: 0.1em;
   display: grid;
   grid-template-columns: 100px 100px;
-  grid-template-rows: 30px 40px 40px 30px 38px 65px 30px;
+  grid-template-rows: 30px 45px 50px 45px 35px 62px 30px;
   /* Color */
   background: ${Colors.scorpion};
   /* Text */

@@ -11,14 +11,14 @@ import {
 
 import ProductAlert from 'components/ProductAlert';
 
-import { ProductList } from '../../components/ProductItem/ProductItem.style';
+//import { ProductList } from '../../components/ProductItem/ProductItem.style';
 
 const HomePage = () => {
   return (
     <>
       <Helmet title={'LANG_PAGE_TITLE.HOME'} message={'Home'} />
       Array:
-      <ProductList>
+
         <Query query={GET_PRODUCT_ITEMS_DETAILS}>
           {({ loading, error, data }) => {
             if (loading) return <div>Loading...</div>;
@@ -26,7 +26,7 @@ const HomePage = () => {
             return <ProductItemList products={data.products} />;
           }}
         </Query>
-      </ProductList>
+      
       Single item
       <Query query={GET_PRODUCT_ITEM_DETAILS}>
         {({ loading, error, data }) => {

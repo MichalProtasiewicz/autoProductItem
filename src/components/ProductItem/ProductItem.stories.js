@@ -11,7 +11,6 @@ import { MockedProvider } from 'react-apollo/test-utils';
 import Mocks from '../../Mocks';
 
 import ProductItemList from './ProductItemList';
-import { object } from 'prop-types';
 
 addDecorator(story => (
   <CssBaseline>
@@ -37,6 +36,56 @@ const ProductList = {
     {
       name: 'Havoline Magnetic',
       subname: 'EVO 15W-40',
+      description: 'Olej przekładniowy',
+      oldPrice: null,
+      discount: '15%',
+      price: '15,00 zł',
+      value: '5l',
+      more: 'Szczegółowy opis produktu'
+    },
+    {
+      name: 'Havoline Magnetic',
+      subname: 'EVO 15W-40',
+      description: 'Olej dniowy',
+      oldPrice: '125,00 zł',
+      discount: '-95%',
+      price: '15,00 zł',
+      value: '5l',
+      more: 'Szczegółowy opis produktu'
+    },
+    {
+      name: 'Magnetic',
+      subname: '15W-40',
+      description: 'Olej przekładniowy',
+      oldPrice: null,
+      discount: '15%',
+      price: '155,00 zł',
+      value: '5l',
+      more: 'Szczegółowy opis produktu'
+    },
+    {
+      name: 'Havoline Magnetic Magnetic',
+      subname: 'EVO ',
+      description: 'Olej przekładniowy',
+      oldPrice: '150,00 zł',
+      discount: '15%',
+      price: '15,00 zł',
+      value: '5l',
+      more: 'Szczegółowy opis produktu'
+    },
+    {
+      name: 'Havoline Magnetic',
+      subname: 'EVO 15W-40',
+      description: 'Olej przekładniowy',
+      oldPrice: null,
+      discount: '15%',
+      price: '15,00 zł',
+      value: '5l',
+      more: 'Szczegółowy opis produktu'
+    },
+    {
+      name: 'Havoline Magnetic',
+      subname: null,
       description: 'Olej przekładniowy',
       oldPrice: null,
       discount: '15%',
@@ -92,5 +141,9 @@ storiesOf('ProductItem', module)
     />
   ))
   .add('List of Products', () => (
-    <ProductItemList products={object('products', ProductList)} />
+
+      <ProductItemList products={ProductList.products}></ProductItemList>
+
+
+
   ));

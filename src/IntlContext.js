@@ -14,12 +14,12 @@ const IntlProviderWrapper = ({ children }) => {
   return (
     <Context.Provider value={{ switchLanguage }}>
       <IntlProvider
-        key={Lang[locale] ? locale : 'en-GB'}
-        locale={Lang[locale] ? locale : 'en-GB'}
+        key={Lang[locale] ? locale : 'en'}
+        locale={Lang[locale] ? locale : 'en'}
         messages={
-          Lang[locale] ? Lang[locale] : Lang['en-GB']
+          Lang[locale] ? Lang[locale] : Lang['en']
         }
-        defaultLocale="en-GB"
+        defaultLocale="en"
       >
         {children}
       </IntlProvider>

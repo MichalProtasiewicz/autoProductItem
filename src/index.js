@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { IntlProviderWrapper } from './IntlContext';
 import { ThemeProviderWrapper } from './ThemeContext';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { MockedProvider } from 'react-apollo/test-utils';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 
@@ -12,18 +13,22 @@ import * as serviceWorker from './serviceWorker';
 
 import System from './System';
 
+import Mocks from './Mocks';
+
 ReactDOM.render(
   <>
     <CssBaseline />
-    <HelmetProvider>
-      <IntlProviderWrapper>
-        <ThemeProviderWrapper>
-          <Router>
-            <System />
-          </Router>
-        </ThemeProviderWrapper>
-      </IntlProviderWrapper>
-    </HelmetProvider>
+    <MockedProvider mocks={Mocks} addTypename={false}>
+      <HelmetProvider>
+        <IntlProviderWrapper>
+          <ThemeProviderWrapper>
+            <Router>
+              <System />
+            </Router>
+          </ThemeProviderWrapper>
+        </IntlProviderWrapper>
+      </HelmetProvider>
+    </MockedProvider>
   </>,
   document.getElementById('root')
 );

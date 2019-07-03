@@ -1,8 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import ProductAlert from './ProductAlert';
 
-it('renders correctly', () => {
-  const tree = renderer.create(<ProductAlert />).toJSON();
-  expect(tree).toMatchSnapshot();
+
+
+describe('<Product Item />', () => {
+  it('Init', () => {
+    const wrapper = shallow(<ProductAlert />);
+    expect(wrapper);
+  });
 });
+
+

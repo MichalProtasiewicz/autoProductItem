@@ -141,9 +141,5 @@ storiesOf('ProductItem', module)
     />
   ))
   .add('List of Products', () => (
-
-      <ProductItemList products={ProductList.products}></ProductItemList>
-
-
-
+    <ProductItemList products={ProductList.products}></ProductItemList>
   ));

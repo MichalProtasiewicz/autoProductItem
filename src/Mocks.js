@@ -197,6 +197,382 @@ export const Mocks = [
       }
     }
   },
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: true,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: false,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: true,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: false,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: true,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: false,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: true,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+//////////////// EDIT_FOLLOW_ITEM //////////////
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: false,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: true,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: false,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: true,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: false,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: true,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: false,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+  {
+    request: {
+      query: EDIT_FOLLOW_ITEM,
+      variables: {
+        isFollow: true,
+      }
+    },
+    result: {
+      data: {
+        editFollowItem: {
+          isAddToCart: true,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
 
 
 

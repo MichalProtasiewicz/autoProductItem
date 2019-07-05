@@ -1,6 +1,8 @@
 import {
   GET_PRODUCT_ITEM_DETAILS,
-  GET_PRODUCT_ITEMS_DETAILS
+  GET_PRODUCT_ITEMS_DETAILS,
+  EDIT_CART_ITEM,
+  EDIT_FOLLOW_ITEM
 } from './pages/HomePage/HomePage.query';
 import faker from 'faker';
 
@@ -21,7 +23,6 @@ export const Mocks = [
           value: faker.random.number(),
           discount: faker.random.number(),
           more: faker.lorem.sentence(),
-
           isAddToCart:true,
           isFollow:true
         }
@@ -169,7 +170,39 @@ export const Mocks = [
         ]
       }
     }
-  }
+  },
+  /////////////// EDIT_CART_ITEM ////////////////
+  {
+    request: {
+      query: EDIT_CART_ITEM,
+      variables: {
+        isAddToCart: false,
+      }
+    },
+    result: {
+      data: {
+        editCartItem: {
+          isAddToCart: false,
+          id: faker.random.number(),
+          price: faker.commerce.price(),
+          oldPrice: faker.commerce.price(),
+          name: faker.lorem.words(),
+          subname: faker.commerce.productAdjective(),
+          description: faker.lorem.words(),
+          value: faker.random.number(),
+          discount: faker.random.number(),
+          more: faker.lorem.sentence(),
+          isFollow:true
+        }
+      }
+    }
+  },
+
+
+
+
+
+
 ];
 
 export default Mocks;

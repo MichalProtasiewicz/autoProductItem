@@ -6,7 +6,7 @@ import ProductItem from 'components/ProductItem';
 import ProductItemList from 'components/ProductItem/ProductItemList';
 import {
   GET_PRODUCT_ITEM_DETAILS,
-  GET_PRODUCT_ITEMS_DETAILS
+  GET_PRODUCT_ITEMS_DETAILS,
 } from './HomePage.query';
 
 const HomePage = () => {
@@ -21,7 +21,7 @@ const HomePage = () => {
             return <ProductItemList products={data.products} />;
           }}
         </Query>
-      Single item
+      Single item:
       <Query query={GET_PRODUCT_ITEM_DETAILS}>
         {({ loading, error, data }) => {
           if (loading) return <div>Loading...</div>;

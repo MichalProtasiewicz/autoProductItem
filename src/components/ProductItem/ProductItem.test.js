@@ -135,15 +135,17 @@ describe('<Product Item />', () => {
   it('With mock data', () => {
     const withMock = shallow(
       <MockedProvider mocks={Mocks} addTypename={false}>
-        <ProductItem data={{
-          subname: 'EVO 15W-40',
-          description: 'Olej przekładniowy',
-          oldPrice: '189,00 zł',
-          discount: '-90%',
-          price: '15,00 zł',
-          value: '5l',
-          more: 'Szczegółowy opis produktu'
-        }}/>
+        <ProductItem
+          data={{
+            subname: 'EVO 15W-40',
+            description: 'Olej przekładniowy',
+            oldPrice: '189,00 zł',
+            discount: '-90%',
+            price: '15,00 zł',
+            value: '5l',
+            more: 'Szczegółowy opis produktu'
+          }}
+        />
       </MockedProvider>
     );
     expect(withMock);

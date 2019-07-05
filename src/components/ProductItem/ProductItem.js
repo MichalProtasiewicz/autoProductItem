@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import { Mutation } from 'react-apollo';
-import { EDIT_CART_ITEM, EDIT_FOLLOW_ITEM } from '../../pages/HomePage/HomePage.query';
+import {
+  EDIT_CART_ITEM,
+  EDIT_FOLLOW_ITEM
+} from '../../pages/HomePage/HomePage.query';
 
 import {
   MoreButton,
@@ -30,7 +33,8 @@ function ProductItem({ data }) {
   const [isFollow, setIsFollow] = useState(false);
 
   useEffect(() => {
-    if (data) setIsDiscount(data.discount && data.oldPrice !== null ? true : false);
+    if (data)
+      setIsDiscount(data.discount && data.oldPrice !== null ? true : false);
     if (data) setIsAddToCart(data.isAddToCart === true ? true : false);
     if (data) setIsFollow(data.isFollow === true ? true : false);
   }, [data]);
@@ -77,13 +81,14 @@ function ProductItem({ data }) {
         <FormattedMessage id={'PRODUCT_ITEM_BUTTON.MORE'} />
       </MoreButton>
       <Mutation mutation={EDIT_CART_ITEM}>
-        {(editCartItem, { data }) => (
+        {(editCartItem, { data }) =>
           isAddToCart ? (
             <NotAddToCart
               href="javascript:void(0)"
               onClick={() => {
                 setIsAddToCart(false);
-                editCartItem({ variables: { isAddToCart: false }});
+                editCartItem({ variables: { isAddToCart: false } });
+                alert('Produkt usunięto z koszyka');
               }}
             >
               <FormattedMessage id={'PRODUCT_ITEM_BUTTON.DELETE_FROM_CART'} />
@@ -93,24 +98,24 @@ function ProductItem({ data }) {
               href="javascript:void(0)"
               onClick={() => {
                 setIsAddToCart(true);
-                editCartItem({ variables: { isAddToCart: true }})
+                editCartItem({ variables: { isAddToCart: true } });
+                alert('Produkt dodano do koszyka');
               }}
             >
               <FormattedMessage id={'PRODUCT_ITEM_BUTTON.ADD_TO_CART'} />
             </AddToCart>
           )
-        )
         }
       </Mutation>
-
       <Mutation mutation={EDIT_FOLLOW_ITEM}>
-        {(editFollowItem, {data}) => (
+        {(editFollowItem, { data }) =>
           isFollow ? (
             <NotFollow
               href="javascript:void(0)"
               onClick={() => {
                 setIsFollow(false);
-                editFollowItem({ variables: { isFollow: false }})
+                editFollowItem({ variables: { isFollow: false } });
+                alert('Produkt usunięto z listy obserwowanych produktów');
               }}
             >
               <FormattedMessage id={'PRODUCT_ITEM_BUTTON.NOTFOLLOW_PRODUCT'} />
@@ -120,16 +125,15 @@ function ProductItem({ data }) {
               href="javascript:void(0)"
               onClick={() => {
                 setIsFollow(true);
-                editFollowItem({ variables: { isFollow: true }})
+                editFollowItem({ variables: { isFollow: true } });
+                alert('Produkt dodano do listy obserwowanych produktów');
               }}
             >
               <FormattedMessage id={'PRODUCT_ITEM_BUTTON.FOLLOW_PRODUCT'} />
             </Follow>
           )
-        )}
+        }
       </Mutation>
-
-
     </Product>
   );
 }

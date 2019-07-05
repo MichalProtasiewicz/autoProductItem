@@ -574,11 +574,6 @@ export const Mocks = [
     }
   },
 
-
-
-
-
-
 ];
 
 export default Mocks;

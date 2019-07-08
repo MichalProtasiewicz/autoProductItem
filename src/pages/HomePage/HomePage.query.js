@@ -68,3 +68,11 @@ export const EDIT_FOLLOW_ITEM = gql`
     }
   }
 `;
+
+export const GET_CAR = gql`
+  {
+    car {
+      car
+    }
+  }
+`;

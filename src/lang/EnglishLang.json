@@ -10,5 +10,13 @@
   "PRODUCT_ITEM_BUTTON.DELETE_FROM_CART" : "Delete from cart",
   "PRODUCT_ITEM_BUTTON.NOTFOLLOW_PRODUCT" : "Followed product",
   "PRODUCT_ITEM_BUTTON.FOLLOW_PRODUCT" : "Follow product",
-  "PRODUCT_ITEM_LABEL.WRONG_DATA": "WRONG PRODUCT!"
+  "PRODUCT_ITEM_LABEL.WRONG_DATA": "WRONG PRODUCT!",
+
+  "PRODUCT_ALERT_STATEMENT.SUCCESS": "This product match the selected car:",
+  "PRODUCT_ALERT_BUTTON.CHANGE": "CHANGE",
+  "PRODUCT_ALERT_STATEMENT.WARING": "Before you buy!",
+  "PRODUCT_ALERT_STATEMENT.WARING_CAR": "Check if the product match your car",
+  "PRODUCT_ALERT_BUTTON.CHANGE_CAR": "Chose car",
+  "PRODUCT_ALERT_.WARING_OFFER": "Our store allows you to closely match products to the selected type of vehicle. Before you buy a product in the store, make sure it suits your car. Just ...",
+  "PRODUCT_ALERT_STATEMENT.WRONG_CAR": "The part does not match the selected vehicle:"
 }

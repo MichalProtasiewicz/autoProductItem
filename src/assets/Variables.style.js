@@ -23,6 +23,9 @@ export const Colors = {
   treePoppy: '#FBA61B',
   white: '#FFF',
   red: '#ff0000',
+  blue: '#0066CC',
+  darkBlue: '#004C99',
+  scorpionLight: '#6C6B6B',
   blackAlfa8: 'rgba(0,0,0,0.8)',
   transparent: 'transparent'
 };

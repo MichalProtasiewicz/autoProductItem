@@ -2,7 +2,8 @@ import {
   GET_PRODUCT_ITEM_DETAILS,
   GET_PRODUCT_ITEMS_DETAILS,
   EDIT_CART_ITEM,
-  EDIT_FOLLOW_ITEM
+  EDIT_FOLLOW_ITEM,
+  GET_CAR
 } from './pages/HomePage/HomePage.query';
 import faker from 'faker';
 
@@ -573,7 +574,19 @@ export const Mocks = [
       }
     }
   },
-
+///////// ALERTS ///////////////////
+{
+  request: {
+    query: GET_CAR
+  },
+  result: {
+    data: {
+      car: {
+        car: "MERCEDES S500 (8E2, B6) 1.8 T queattro, 140 PS, 103 kW"
+      }
+    }
+  }
+},
 ];
 
 export default Mocks;

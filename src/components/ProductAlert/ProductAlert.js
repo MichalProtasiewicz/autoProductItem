@@ -17,14 +17,17 @@ import {
   IconRed
 } from './ProductAlert.style';
 
+import { FaCheck, FaExclamation } from "react-icons/fa";
+import { TiTimes } from "react-icons/ti";
+
 export function ProductAlertSuccess({ data }) {
   return (
 
     <AlertSuccess>
       <Cross href="javascript:void(0)">
-        X
+        <TiTimes />
       </Cross>
-      <Icon>✓</Icon>
+      <Icon><FaCheck /></Icon>
       <Statement>
         <FormattedMessage id={'PRODUCT_ALERT_STATEMENT.SUCCESS'} />
         <Car>{data.car}</Car>
@@ -40,9 +43,9 @@ export function ProductAlertWarning({ data }) {
   return (
     <AlertWarning>
       <Cross href="javascript:void(0)">
-        X
+        <TiTimes />
       </Cross>
-      <Icon>!</Icon>
+      <Icon><FaExclamation /></Icon>
       <StatementWar>
         <FormattedMessage id={'PRODUCT_ALERT_STATEMENT.WARING'} />
         <CarWar><FormattedMessage id={'PRODUCT_ALERT_STATEMENT.WARING_CAR'} /></CarWar>
@@ -59,9 +62,9 @@ export function ProductAlertWrong({ data }) {
   return (
     <AlertSuccess>
       <Cross href="javascript:void(0)">
-        X
+        <TiTimes />
       </Cross>
-      <IconRed>X</IconRed>
+      <IconRed><TiTimes /></IconRed>
       <StatementWrong>
         <FormattedMessage id={'PRODUCT_ALERT_STATEMENT.WRONG_CAR'} />
         <CarWrong>{data.car}</CarWrong>

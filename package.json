@@ -13,6 +13,7 @@
     "react-dom": "^16.8.6",
     "react-final-form": "^5.1.2",
     "react-helmet-async": "^1.0.2",
+    "react-icons": "^3.7.0",
     "react-image-autofit-frame": "^0.1.0",
     "react-intl": "^2.9.0",
     "react-router-dom": "^5.0.0",

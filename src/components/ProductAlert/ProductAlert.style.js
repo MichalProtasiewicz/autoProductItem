@@ -31,6 +31,7 @@ export const Cross = styled.a`
 export const Icon = styled.div`
   margin: 0.1em;
   margin-bottom: 0.9em;
+  padding-top:0.1em;
   border-radius: 0.2em;
   grid-column: 1;
   grid-row:1;
@@ -149,7 +150,7 @@ export const CarWrong = styled.div`
 
 export const IconRed = styled.div`
   margin: 0.1em;
-  margin-bottom: 0.9em;
+  margin-bottom: 0.7em;
   border-radius: 0.2em;
   grid-column: 1;
   grid-row:1;
@@ -157,6 +158,6 @@ export const IconRed = styled.div`
   background: ${Colors.red};
   text-decoration: none;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.7em;
   font-weight: bold;
 `;

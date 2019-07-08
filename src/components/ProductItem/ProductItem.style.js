@@ -199,13 +199,13 @@ export const NotFollow = styled.a`
 `;
 
 export const Cross = styled.a`
-  margin: 0.2em;
-  margin-right: 0.5em;
+  margin: 0.1em;
+  margin-right: 0.1em;
   float: right;
   display: inline-block;
   color: ${Colors.white};
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   &:hover {
     color: ${Colors.silverChalice};

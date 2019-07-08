@@ -26,6 +26,8 @@ import {
   Cross
 } from './ProductItem.style';
 
+import { TiTimes } from "react-icons/ti";
+
 function ProductItem({ data }) {
   const [isDiscount, setIsDiscount] = useState(false);
   const [isMore, setIsMore] = useState(false);
@@ -48,7 +50,7 @@ function ProductItem({ data }) {
             setIsMore(false);
           }}
         >
-          X
+          <TiTimes />
         </Cross>
         {data.more}
       </More>
